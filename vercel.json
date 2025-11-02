@@ -1,8 +1,5 @@
 {
   "version": 2,
-  "functions": {
-    "api/**/*.py": { "runtime": "vercel-python@3.0.0" }
-  },
   "routes": [
     { "src": "/api/telegram/webhook",   "dest": "api/telegram/webhook.py" },
     { "src": "/api/sync/user",          "dest": "api/sync/user.py" },
