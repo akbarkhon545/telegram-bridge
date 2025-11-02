@@ -1,18 +1,17 @@
 {
+  "version": 2,
   "functions": {
-    "api/sync/user.py": {
-      "runtime": "python3.9"
-    },
-    "api/sync/test-result.py": {
-      "runtime": "python3.9"
-    },
-    "api/sync/telegram-link.py": {
-      "runtime": "python3.9"
-    },
-    "api/telegram/webhook.py": {
-      "runtime": "python3.9"
-    }
+    "api/telegram/webhook.py": { "runtime": "python3.11" },
+    "api/sync/user.py": { "runtime": "python3.11" },
+    "api/sync/test_result.py": { "runtime": "python3.11" },
+    "api/sync/telegram_link.py": { "runtime": "python3.11" }
   },
+  "routes": [
+    { "src": "/api/telegram/webhook", "dest": "api/telegram/webhook.py" },
+    { "src": "/api/sync/user", "dest": "api/sync/user.py" },
+    { "src": "/api/sync/test-result", "dest": "api/sync/test_result.py" },
+    { "src": "/api/sync/telegram-link", "dest": "api/sync/telegram_link.py" }
+  ],
   "env": {
     "SUPABASE_URL": "@supabase_url",
     "SUPABASE_KEY": "@supabase_key",
