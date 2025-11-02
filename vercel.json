@@ -1,10 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/telegram/webhook.py": { "runtime": "python3.11" },
-    "api/sync/user.py": { "runtime": "python3.11" },
-    "api/sync/test_result.py": { "runtime": "python3.11" },
-    "api/sync/telegram_link.py": { "runtime": "python3.11" }
+    "api/**/*.py": { "runtime": "vercel-python@3.11" }
   },
   "routes": [
     { "src": "/api/telegram/webhook",   "dest": "api/telegram/webhook.py" },
