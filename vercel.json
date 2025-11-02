@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "api/sync/user.py": {
+      "runtime": "python3.9"
+    },
+    "api/sync/test-result.py": {
+      "runtime": "python3.9"
+    },
+    "api/sync/telegram-link.py": {
+      "runtime": "python3.9"
+    },
+    "api/telegram/webhook.py": {
+      "runtime": "python3.9"
+    }
+  },
+  "env": {
+    "SUPABASE_URL": "@supabase_url",
+    "SUPABASE_KEY": "@supabase_key",
+    "TELEGRAM_BOT_TOKEN": "@telegram_bot_token",
+    "BRIDGE_SECRET": "@bridge_secret"
+  }
+}
