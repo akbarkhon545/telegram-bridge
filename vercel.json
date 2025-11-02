@@ -7,15 +7,9 @@
     "api/sync/telegram_link.py": { "runtime": "python3.11" }
   },
   "routes": [
-    { "src": "/api/telegram/webhook", "dest": "api/telegram/webhook.py" },
-    { "src": "/api/sync/user", "dest": "api/sync/user.py" },
-    { "src": "/api/sync/test-result", "dest": "api/sync/test_result.py" },
+    { "src": "/api/telegram/webhook",   "dest": "api/telegram/webhook.py" },
+    { "src": "/api/sync/user",          "dest": "api/sync/user.py" },
+    { "src": "/api/sync/test-result",   "dest": "api/sync/test_result.py" },
     { "src": "/api/sync/telegram-link", "dest": "api/sync/telegram_link.py" }
-  ],
-  "env": {
-    "SUPABASE_URL": "@supabase_url",
-    "SUPABASE_KEY": "@supabase_key",
-    "TELEGRAM_BOT_TOKEN": "@telegram_bot_token",
-    "BRIDGE_SECRET": "@bridge_secret"
-  }
+  ]
 }
